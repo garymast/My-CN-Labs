@@ -21,9 +21,9 @@ public class Exercise_05 {
         // prompt user
         System.out.print("Enter a number in days between 1 and 1,000,000,000: ");
         // assign input to variable as int
-        int days = scanner.nextInt();
+        long days = scanner.nextInt();
 
-        int seconds = days * 24 * 60 * 60;
+        long seconds = days * 24 * 60 * 60;
         System.out.println("There are " + seconds + " in " + days + " days");
 
         // write completed code here
