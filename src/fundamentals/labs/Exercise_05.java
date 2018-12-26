@@ -23,6 +23,8 @@ public class Exercise_05 {
         // assign input to variable as int
         int days = scanner.nextInt();
 
+
+
         // write completed code here
 
     }

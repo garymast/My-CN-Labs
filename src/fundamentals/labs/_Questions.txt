@@ -1,65 +1,87 @@
 Answer the following questions:
 
 1.) Using the command line, how do you:
-    a. change directories?
-    cd <path>
+        a. change directories?
+        cd <path>
 
     b. list the contents of a folder?
-    ls -al (-al for a verbose list)
+        ls -al (-al for a verbose list)
 
     c. print the path of the current directory?
-    pwd
+        pwd
 
     d. move a file from one location to the another?
-    mv <filename> <sub-dir>/<filename>
+        mv <filename> <sub-dir>/<filename>
 
     e. copy a file from one location to another?
-    cp <filename> <directory>
+        cp <filename> <directory>
 
     f. create a file?
-    touch <filename>
+        touch <filename>
 
     g. create a folder?
-    mkdir <new-folder>
+        mkdir <new-folder>
 
     h. delete a file?
-    rm <filename>
+        rm <filename>
 
     i. delete a folder?
-    rm -r
-    rm -R
+        rm -r
+        rm -R
 
     j. print the contents of a file?
-    cat <filename>
+        cat <filename>
 
     k. edit the contents of a file?
-    vim <filename> (If vim is installed, which it wasn't on ubuntu when first run)
+        vim <filename> (If vim is installed, which it wasn't on ubuntu when first run)
 
 2.) Why do we use git and Github?
-    We use git and GitHub so that;
-    Our code is backed up in a cloud repository
-    So we can collaborate with co-workers
-    We can track all changes made to ours/co-workers code
+        We use git and GitHub so that;
+        Our code is backed up in a cloud repository
+        So we can collaborate with co-workers
+        We can track all changes made to ours/co-workers code
 
 3.) What is the general flow of git?
+        A local git repository is created on the desktop
+        A gitHub repository is created which will eventually be synced with the local repository
+        Files created in the local repository are
+            added to the git repo
+            commited for upload to github
+            pushed to the github repository with changes tracked
 
+        Files can also be pulled from the GitHub repository
+            This could be someone elses work which you need to work on or it could be to create a branch of the master file
 
 4.) What is the purpose of adding a remote to a local git repository?
+        So that files can be pushed and pulled as necessary from an online repo
 
 5.) How do you print a message to the console?
+        System.out.println("message")
+        sout
 
 6.) Where does a program begin its execution?
+        public static void main(String[] args){
 
 7.) What is a code block and how do you create one?
+        A code block is a block or group of statements that are required to be executed together.
+        It is created by putting an opening curly brace at the beginning and a closing curly brace at the
+        end a the group of statements.
 
 8.) What is the idea of variable scope?
+        Variables defined inside a set of curly braces/ code block are not visible to code which has been defined outside
+        of that code block.
+        For example, if some variables are defined inside a method in the class, these variables cannot be accessed by
+        other methods even though they are part of the same class.
 
 9.) What are semicolons used for?
+        A semicolon ends a statement in java
 
 10.) What are lines of code indented? When should a line be indented?
+        Lines of code are indented so that the code is readable and conforms to standards.
+        A line should be indented one level after an opening curly brace and move back out one level after a closing brace.
 
 11.) What does a .java file need to be complied to a .class file before running?
-
+        Because the JVM can only read bytecode which it then translates into machine code
 
 
 

@@ -2,6 +2,7 @@ Fundamentals Exercise 1: CLI
      Perform the following tasks using the CLI and copy and paste the commands and results below
 
      1. Navigate to CodingNomads folder (or the space you have create for this project)
+
      2. Create new folder Terminal_testing
      3. Inside of folder Terminal_testing,
          a. create 3 new .txt files all with different names
@@ -18,7 +19,43 @@ Fundamentals Exercise 1: CLI
          b. Use $ cat print contents of file
          c. Use $ grep to search for a word inside file
 
-Example Output (pwd):
-    1. Cadens-MacBook-Pro:CodingNomads cadenmackenzie$ pwd
-       /Users/cadenmackenzie/Documents/CodingNomads
+    Output:
+    1.  gary@gary-Satellite-L850:~$ cd Documents/CodingNomads1/
+
+    2.  gary@gary-Satellite-L850:CodingNomads1$ mkdir Terminal_testing
+
+    3.  a.  gary@gary-Satellite-L850:Terminal_testing$ touch file1.txt
+            gary@gary-Satellite-L850:Terminal_testing$ touch file2.txt
+            gary@gary-Satellite-L850:Terminal_testing$ touch file3.txt
+
+        b.  gary@gary-Satellite-L850:CodingNomads1$ pwd
+            /home/gary/Documents/CodingNomads1/Terminal_testing
+
+        c.  gary@gary-Satellite-L850:Terminal_testing$ ls -al
+            total 12
+            drwxrwxr-x 3 gary gary 4096 Dec 26 18:07 .
+            drwxrwxr-x 5 gary gary 4096 Dec 26 18:02 ..
+            -rw-rw-r-- 1 gary gary    0 Dec 26 18:07 file1.txt
+            -rw-rw-r-- 1 gary gary    0 Dec 26 18:07 file2.txt
+            -rw-rw-r-- 1 gary gary    0 Dec 26 18:07 file3.txt
+
+    5.  gary@gary-Satellite-L850:CodingNomads1$ cd Terminal_testing
+        gary@gary-Satellite-L850:Terminal_testing$ mkdir Sub_term
+
+    6.  gary@gary-Satellite-L850:Terminal_testing$ cp file1.txt Sub_term
+
+    7.  gary@gary-Satellite-L850:Terminal_testing$ mv file2.txt Sub_term
+
+    8.  a.  gary@gary-Satellite-L850:Terminal_testing$ rm file3.txt
+
+        b.  gary@gary-Satellite-L850:Terminal_testing$ rm -R Sub_term
+
+    9.  a.  gary@gary-Satellite-L850:Terminal_testing$ vim file1.txt
+
+        b.  gary@gary-Satellite-L850:Terminal_testing$ cat file1.txt
+            This is file 1
+            It has been edited using VIM
+
+        c.  gary@gary-Satellite-L850:Terminal_testing$ grep "edited" file1.txt
+            It has been edited using VIM
 
