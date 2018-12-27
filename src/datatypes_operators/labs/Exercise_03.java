@@ -1,5 +1,7 @@
 package datatypes_operators.labs;
 
+import java.util.Scanner;
+
 /**
  * Data Types and Operators Exercise 3: Pig latin
  *
@@ -15,7 +17,15 @@ public class Exercise_03 {
 
     public static void main(String[] args) {
 
-        // write code here
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your name: ");
+
+        String name = scanner.nextLine();
+
+        String pigL = name.substring(1,name.length()) + name.charAt(0) + "ay";
+
+        System.out.println(pigL);
 
     }
 }
