@@ -59,16 +59,30 @@ Answer the following questions:
         int can always be cast String
 
 15.) What is an array?
+        An array is a collection of variables of the same type.
 
 16.) What is the first index of an array?
+        0
 
 17.) Can you change the size of an array once it has been declared and initialized?
+        No. One would have to copy the data to a new array of a different size.
 
 18.) How do you print the 5th element in an array "exampleArray"?
+        System.out.print(exampleArray[4]);
 
 19.) What are the two ways you can declare and initialize an array? Demonstrate both.
+        int[] arrOne = {1,2,3,4,5};
+
+        int[] arrTwo = new int[5];
+        arrTwo[0] = 1;
+        arrTwo[1] = 2;
+        arrTwo[2] = 3;
+        arrTwo[3] = 4;
+        arrTwo[4] = 5;
 
 20.) How do you iterate through a multidimensional array?
+        Using a nested for loop.
 
 21.) What is the for-each loop used for?
+        The for-each loop is used to iterate through every variable in an array regardless of the size.
 

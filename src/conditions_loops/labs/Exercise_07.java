@@ -29,6 +29,7 @@ public class Exercise_07 {
             }
 
             i++;
+
             if (i == word.length())  {
                 System.out.println("No vowel present in: " + word);
             }
