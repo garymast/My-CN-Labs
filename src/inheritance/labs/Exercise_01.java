@@ -24,3 +24,111 @@ package inheritance.labs;
  *
  */
 
+class Animals{
+private double weight;
+private int age;
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public Animals(double weight, int age) {
+        this.weight = weight;
+        this.age = age;
+    }
+
+    public void move() {
+        System.out.println("Animals use a variety of different methods to move");
+    }
+}
+
+
+class Mammals extends Animals{
+private String species;
+private String hairColour;
+
+    public String getSpecies() {
+        return species;
+    }
+
+    public void setSpecies(String species) {
+        this.species = species;
+    }
+
+    public String getHairColour() {
+        return hairColour;
+    }
+
+    public void setHairColour(String hairColour) {
+        this.hairColour = hairColour;
+    }
+
+    public Mammals(double weight, int age, String species, String hairColour) {
+        super(weight, age);
+        this.species = species;
+        this.hairColour = hairColour;
+    }
+
+    public void allMammals() {
+        System.out.println("All mammals drink milk as babies");
+
+    }
+    }
+
+
+class Human extends Mammals{
+private String nationality;
+private String name;
+
+    public String getNationality() {
+        return nationality;
+    }
+
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Human(double weight, int age, String species, String hairColour, String nationality, String name) {
+        super(weight, age, species, hairColour);
+        this.nationality = nationality;
+        this.name = name;
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Humans typically use their legs to walk around");
+    }
+
+    public static void main(String[] args) {
+        Human gary = new Human(75, 30, "Human", "brown", "Irish", "Gary");
+        gary.move();
+        System.out.println(gary.getAge());
+
+        gary.setNationality("American");
+        System.out.println(gary.getNationality());
+
+        gary.allMammals();
+    }
+
+}
+

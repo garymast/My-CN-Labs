@@ -1,20 +1,31 @@
 Answer the following questions:
 
 1.) What is inheritance?
+        Inheritence is extending a class so that the subclass below has access to certain methods and variables in the class.
 
 2.) Why do we use inheritance?
+        We use inheritence so that we are not repeating code for similar yet slighlty different classes which all retain properties of the super class.
 
 3.) Provide a real world example where you think inheritance would be implemented.
+        In modelling a motorcycle and a car. The Motorcycle and car classes would extend the Vehicle class which would hold typical variables and methods associated with all vehicles.
 
 4.) How does a class inherit another class?
+        This si done using the extends keyword.
 
 5.) How many levels can a hierarchy extend?
+        There is no limit to the number of levels.
 
 6.) What is the "super" keyword used for?
+        The super keyword is used to specifically refer to either a method or a variable in the parent class.
+        It is for the most part opposite to the this keyword.
 
 7.) When a subclass object is created, in what order do the constructors execute?
+        The object at the top of the heirarchy is created first and then each subsequent subclass is executed in order.
 
 8.) What is method overwriting?
+        Method overwriting is the overwriting of a method that is already in the parent class.
 
 9.) How can method overwriting be beneficial?
-
+        This is useful when a method required to perform a task in a subclass is different from the parent method such as
+        with the above motorbike and car, they do not start the same so the vehicle method for start would be overwritten by
+        the motorbike class.
